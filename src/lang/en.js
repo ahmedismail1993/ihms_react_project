@@ -1,0 +1,46 @@
+export default {
+  navbar: {
+    home: 'Home',
+    services: 'Services',
+    categories: 'Categories',
+    products: 'Products',
+    news: 'News',
+    galleries: 'Galleries',
+    members: 'Members',
+    helps: 'Helps',
+    arabic: 'Arabic',
+    english: 'English',
+  },
+  button: {
+    signUp: 'Sign Up',
+    login: 'Login',
+    logout: 'Log out',
+    clear_all: 'Clear All',
+  },
+  form: {
+    first_name: 'First Name',
+    last_name: 'Last Name',
+    email: 'Email',
+    phone: 'Phone',
+    password: 'Password',
+    email_or_phone: 'Email Or Phone',
+  },
+  heading: {
+    signUp: 'signUp',
+    login: 'Login',
+    profile: 'Profile',
+    you_already_have_account: 'You Already Have Account ?',
+    you__have_not_account: "You don't have Account",
+  },
+  validation: {
+    required: '{{field}} is required',
+    invalid_phone: 'please all valid phone Exp:595959595',
+    maxLength: '{{field}} length must be less than {{max}}',
+    minLength: '{{field}} length must be more than {{max}}',
+    phone_or_email: 'Please Add valid Phone or Email',
+  },
+  labels: {
+    sar: 'SAR',
+    search_product: 'Search Product',
+  },
+};

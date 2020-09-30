@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Font Bold';
+    src: url('URWDINArabic-Bold.woff2') format('woff2'),
+        url('URWDINArabic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'URW DIN Arabic Demi';
+    src: url('URWDINArabic-Demi.woff2') format('woff2'),
+        url('URWDINArabic-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'URW DIN Arabic';
+    src: url('URWDINArabic-Regular.woff2') format('woff2'),
+        url('URWDINArabic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Font Light';
+    src: url('URWDINArabic-Medium.woff2') format('woff2'),
+        url('URWDINArabic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Font Regular';
+    src: url('URWDINArabic-Regular.woff2') format('woff2'),
+        url('URWDINArabic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

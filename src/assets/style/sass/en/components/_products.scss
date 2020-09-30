@@ -1,0 +1,107 @@
+.products {
+  padding-top: 10rem;
+  .card {
+    border-radius: 1rem;
+    border: none !important;
+    @include prefixer(box-shadow, 0 0.3rem 1rem rgba(0, 0, 0, 0.2), webkit moz);
+    position: relative;
+    img {
+      border-radius: 1rem;
+      position: relative;
+    }
+    &-title {
+      font-family: $font-bold;
+      text-transform: capitalize;
+      font-size: 1.6rem;
+    }
+    &-subtitle {
+      font-family: $font-medium;
+      font-size: 1.4rem;
+      justify-content: space-between;
+      display: flex;
+      .new-price {
+        color: $red-color;
+      }
+      .old-price {
+        color: $light-gray-color;
+        text-decoration: line-through;
+      }
+    }
+    .sale-share {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 2rem;
+      .sale {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background-color: $red-color;
+        color: $white-color;
+        font-family: $font-bold;
+        font-size: 1.2rem;
+      }
+    }
+    .share-button {
+      all: unset;
+      cursor: pointer;
+    }
+  }
+  &__search-input {
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-family: $font-medium;
+    color: $gray-color;
+    padding: 2rem;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .clear-button {
+    all: unset;
+    font-family: $font-bold;
+    color: $red-color;
+    border: none;
+    font-size: 1.4rem;
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+    &:active {
+      color: $red-color !important;
+    }
+  }
+  .toggle-button {
+    @include resetButton;
+    font-family: $font-bold;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $gray-color;
+  }
+  .toggle-icon {
+    height: 1.5rem;
+    fill: $gray-color !important;
+    margin: 0 1rem;
+  }
+  .category {
+    .list-group-item {
+      background-color: transparent;
+      color: $gray-color;
+      font-size: 1.4rem;
+      font-family: $font-medium;
+      border: none;
+    }
+  }
+  .active-category {
+    color: $red-color !important;
+    font-family: $font-bold !important;
+  }
+}

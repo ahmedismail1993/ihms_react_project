@@ -1,0 +1,31 @@
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+body {
+  background-color: $white-color;
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.error-message {
+  color: $red-color;
+  text-transform: capitalize;
+  font-family: $font-medium;
+}

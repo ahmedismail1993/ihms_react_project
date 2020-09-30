@@ -1,0 +1,63 @@
+.auth {
+  min-height: 100vh;
+  &__right-side {
+    border: 0.1rem solid rgba(151, 151, 151, 0.34);
+    box-shadow: 0 0.2rem 0.5rem rgba(151, 151, 151, 0.34);
+    border-radius: 0.5rem;
+    padding: 3rem;
+    &__title {
+      font-size: 2rem;
+      font-family: $font-bold;
+    }
+    label {
+      font-family: $font-bold;
+      font-size: 1.2rem;
+      color: $gray-color;
+    }
+    input {
+      padding: 2rem;
+      border-radius: 0.5rem;
+      font-family: $font-bold;
+      font-size: 1.4rem;
+    }
+    .invalid-feedback {
+      font-family: $font-medium;
+      font-size: 1.1rem;
+    }
+  }
+  &__left-side {
+    background-image: url('../../../../images/auth.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  &__signUp-button {
+    background-color: $red-color;
+    color: $white-color !important;
+    border: 0.1rem solid transparent !important;
+    padding: 1rem;
+    font-family: $font-bold;
+    font-size: 1.8rem;
+    box-shadow: none !important;
+    @include prefixer(transition, all 0.5s ease, webkit moz);
+    border-radius: 1rem;
+    &:hover {
+      background-color: $white-color !important;
+      color: $red-color !important;
+      border: 0.1rem solid $red-color !important;
+    }
+  }
+  &__have-account {
+    font-family: $font-bold;
+    font-size: 1.2rem;
+    color: $gray-color;
+    a {
+      margin: 0 0.5rem;
+      color: $red-color !important;
+    }
+  }
+}
+
+.full-height {
+  min-height: 100vh;
+}

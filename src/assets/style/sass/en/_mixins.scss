@@ -1,0 +1,14 @@
+// prefixes mixin
+@mixin prefixer($property, $value, $prefixes: ()) {
+  @each $prefixe in $prefixes {
+    #{'-'+ $prefixe +'-'+ $property}: $value;
+  }
+  #{$property}: $value;
+}
+
+@mixin resetButton {
+  background-color: transparent;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}

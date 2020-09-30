@@ -1,0 +1,46 @@
+export default {
+  navbar: {
+    home: 'الرئيسية',
+    services: 'الخدمات',
+    categories: 'اﻷقسام',
+    products: 'المنتجات',
+    news: 'اﻷخبار',
+    galleries: 'الصور',
+    members: 'اعضاء المطبعة',
+    helps: 'المساعدة',
+    arabic: 'العربية',
+    english: 'اﻷنجليزية',
+  },
+  button: {
+    signUp: 'تسجيل دخول حساب جديد',
+    login: 'تسجيل دخول',
+    logout: 'تسجيل خروج',
+    clear_all: 'مسح الكل',
+  },
+  form: {
+    first_name: 'اﻷسم الاول',
+    last_name: 'اﻷسم اﻷخير',
+    email: 'البريد اﻷلكتروني',
+    phone: 'رقم الجوال',
+    password: 'كلمة المرور',
+    email_or_phone: 'رقم الجوال او البريد اﻷلكتروني',
+  },
+  heading: {
+    signUp: 'تسجيل حساب جديد',
+    login: 'تسجيل دخول',
+    profile: 'حسابك الشخصي',
+    you_already_have_account: 'لديك حساب بالغعل ؟',
+    you__have_not_account: 'ليس لديك حساب بالفعل ؟',
+  },
+  validation: {
+    required: '{{field}}  مطلوب',
+    invalid_phone: 'ادخل رقم جوال صحيح مثال :595959595',
+    maxLength: '{{field}} يجب ان يكون اقل من {{max}}',
+    minLength: '{{field}}   يجب ان يكون اكبر من  {{min}} حروف',
+    phone_or_email: 'ادخل رقم جوال صحيح او البريد اﻷلكرتوني',
+  },
+  labels: {
+    sar: 'ريال',
+    search_product: 'ابحث عن المنتجات',
+  },
+};

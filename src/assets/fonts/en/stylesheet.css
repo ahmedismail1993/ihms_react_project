@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Font Regular';
+  src: url('GalanoGrotesque-Thin.woff2') format('woff2'),
+    url('GalanoGrotesque-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Font Bold';
+  src: url('GalanoGrotesque-Bold.woff2') format('woff2'),
+    url('GalanoGrotesque-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Font Light';
+  src: url('GalanoGrotesque-Medium.woff2') format('woff2'),
+    url('GalanoGrotesque-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}

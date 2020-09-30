@@ -1,0 +1,104 @@
+.nav-header {
+  .navbar {
+    padding: 1rem 1rem;
+    position: fixed;
+    background-color: $white-color;
+    z-index: 5;
+    width: 100%;
+    @include prefixer(transition, all 0.3s linear, webkit moz);
+
+    .navbar-nav {
+      .nav-item {
+        a {
+          font-size: 1.6rem;
+          color: $gray-color !important;
+          font-family: $font-bold;
+          position: relative;
+          &.active {
+            color: $red-color !important;
+            &::after {
+              @include prefixer(transition, all 0.5s ease, webkit moz);
+              content: '';
+              width: 70%;
+              height: 0.2rem;
+              background-color: $red-color;
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: -1rem;
+            }
+          }
+        }
+      }
+      &:first-of-type {
+        a {
+          &::after {
+            @include prefixer(transition, all 0.5s ease, webkit moz);
+            content: '';
+            width: 0;
+            height: 0.2rem;
+            background-color: $gray-color;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -1rem;
+          }
+          &:hover {
+            &::after {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .collapse {
+    li {
+      line-height: 3 !important;
+    }
+  }
+  &__button {
+    color: $red-color;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-family: $font-bold;
+    border-color: $red-color !important;
+    border-radius: 0.5rem !important;
+    border: 0.1rem solid $red-color;
+    display: flex;
+    // justify-content: space-between;
+    padding: 0.5rem;
+    @include prefixer(transition, all 0.5s ease, webkit moz);
+    &--logo {
+      height: 3rem;
+      fill: $red-color;
+      @include prefixer(transition, all 0.5s ease, webkit moz);
+    }
+    &:hover {
+      background-color: $red-color;
+      color: $white-color;
+      .nav-header__button--logo {
+        fill: $white-color !important;
+      }
+    }
+    &--dropdown {
+      button {
+        background-color: $white-color !important;
+        border: none !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+  .dropdown-menu {
+    .dropdown-item {
+      font-family: $font-bold;
+      font-size: 1.6rem;
+      color: $gray-color !important;
+    }
+  }
+}
+
+.scrolled-navbar {
+  @include prefixer(box-shadow, 0 0.1rem 0.5rem $gray-color, webkit moz);
+  padding: 0.5rem 1rem !important;
+}
